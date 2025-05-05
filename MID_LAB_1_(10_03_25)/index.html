@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Air Index</title>
 </head>
 <body>
@@ -14,16 +15,19 @@
         <div>
             <div style="background-color: aquamarine; height: auto; width: 250px;">
                 <div style="padding: 20px;">
-                    <form>
-                        <label>Enter your full name:</label>
+                    <form onsubmit="return validateForm()" method="post">
+                        <label>Enter your first name:</label>
                         <input type="text" id="fname" name="full name" placeholder="Your name.."/>
+                        <label>Enter your last name:</label>
+                        <input type="text" id="lname" name="full name" placeholder="Your name.."/>
                         <label for="lname">Enter your email:</label>
                         <input type="email" id="email" name="email" placeholder="xyz@gmail.com">
                         <label for="lname">Enter your password:</label>
-                        <input type="password" id="password" name="password" placeholder="password">
+                        <input type="password" id="pass" name="password" placeholder="password">
                         <label for="lname">Confirm password:</label>
-                        <input type="password" id="password" name="password" placeholder="password">
-
+                        <input type="password" id="cpass" name="password" placeholder="password">
+                        <label for="lname">Date</label>
+                        <input type="date" id="dob" name="birthday">
 
                         <label for="country">Country</label>
                         <select id="country" name="country">
@@ -31,8 +35,20 @@
                             <option value="canada">Canada</option>
                             <option value="usa">USA</option>
                         </select>
+
+                        <label class="container">One
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container">Two
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <input type="submit"></input>
                     </form>
                 </div>
+               
             </div>
             <div style="background-color: rgb(223, 251, 12); height: 250px; width: 250px;">
                 <div style="padding: 90px 0;">
