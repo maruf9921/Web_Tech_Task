@@ -7,13 +7,13 @@
     <script src="index.js"></script>
     <title>Air Index</title>
 </head>
-<body>
-    <div style="justify-content: center;">
-        <img style="height: 80px; width: 80px;" src="logo.jpg" />
+<body class="body">
+    <div style="text-align: center;">
+        <img style="height: 80px; width: 80px;" src="airlogo.png" />
     </div>
     <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
         <div>
-            <div style="background-color: aquamarine; height: auto; width: 250px;">
+            <div style="background-color: aquamarine; height: auto; width: 350px;">
                 <div style="padding: 20px;">
                     <form onsubmit="return validateForm()" method="post">
                         <label>Enter your first name:</label>
@@ -36,27 +36,30 @@
                             <option value="usa">USA</option>
                         </select>
 
-                        <label class="container">One
-                            <input type="checkbox" checked="checked">
+                        <label for="lname" >Gender:</label><br>
+                        <label class="container">
+                            <input type="checkbox" id="male" onchange="toggleCheckbox(this)">
                             <span class="checkmark"></span>
+                            Male
                           </label>
                           
-                          <label class="container">Two
-                            <input type="checkbox">
+                          <label class="container">
+                            <input type="checkbox" id="female" onchange="toggleCheckbox(this)">
                             <span class="checkmark"></span>
+                            Female
                           </label>
                           <input type="submit"></input>
                     </form>
                 </div>
                
             </div>
-            <div style="background-color: rgb(223, 251, 12); height: 250px; width: 250px;">
+            <div style="background-color: rgb(223, 251, 12); height: 250px; width: 350px;">
                 <div style="padding: 90px 0;">
                     <p style="text-align: center; color: black;">Rec</p>
                 </div>
             </div>
         </div>
-        <div style="background-color: cadetblue; height: 550px; width: 200px;">
+        <div style="background-color: cadetblue; height: auto; width: 350px;">
             <div style="padding: 90px 0;">
                 <p style="text-align: center; color: black;">Rec</p>
             </div>

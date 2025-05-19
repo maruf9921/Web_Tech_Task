@@ -1,3 +1,12 @@
+body {
+      background-image: url('back.webp'); /* Replace with your image path */
+      background-size: cover;     /* Makes it cover the whole screen */
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+
 input[type=text], input[type=email], input[type=password], select {
     width: 100%;
     padding: 12px 20px;
@@ -10,7 +19,7 @@ input[type=text], input[type=email], input[type=password], select {
 
 
   input[type=date] {
-    width: 100%;
+    width: 85%;
     padding: 12px 20px;
   }
 
@@ -24,3 +33,12 @@ input[type=text], input[type=email], input[type=password], select {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  .container {
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 15px;
+    }
